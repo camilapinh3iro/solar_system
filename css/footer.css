@@ -18,7 +18,6 @@ footer p {
     padding: 0 60px;
 }
 
-
 .content-span-icons {
     display: flex;
     flex-direction: column;
@@ -78,8 +77,21 @@ footer p {
     transform: scale(1.2);
 }
 
-
 .contact-item:hover{
     transform: scale(1.1);
 }
 
+.back-top {
+    color: var(--primary-color);
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    display: grid;
+    place-content: center;
+    transition: all .5s;
+}
+
+.rocket-back-top {
+    height: 35px;
+    width: 35px;
+}
