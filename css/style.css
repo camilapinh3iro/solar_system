@@ -1,0 +1,27 @@
+body{
+    color: var(--secondary-color);
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 80px auto 60px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+header{
+    grid-area: header;
+    /* width: 100%; */
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    place-self: end center;
+    background-color: var(--primary-color);
+    width: 100%;
+}

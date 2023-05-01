@@ -1,0 +1,16 @@
+header{
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    border-bottom: 1px solid var(--secondary-color);
+    font-size: 1.6rem;
+}
+
+.logo{
+    height: 42px;
+    width: 42px;
+}
+
+

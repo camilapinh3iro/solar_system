@@ -1,0 +1,85 @@
+footer {
+    height: 60px;
+    display: grid;
+    place-items: center;
+    border-top: 1px solid var(--secondary-color);
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+.personal-information {
+    height: 240px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+
+.content-span-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.follow {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.social-container {
+    font-size: 1.9rem;
+    display: flex;
+    gap: 20px;
+}
+
+.social {
+    height: 50px;
+    width: 50px;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    transition: all 400ms ease-in-out;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: default;
+    transition: all 400ms ease-in-out;
+}
+
+.contact-container i {
+    font-size: 1.5rem;
+    width: 25px;
+}
+
+.contact-item-text {
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.social:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+
+.contact-item:hover{
+    transform: scale(1.1);
+}
+
