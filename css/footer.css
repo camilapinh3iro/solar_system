@@ -7,10 +7,11 @@ footer {
 
 footer p {
     font-size: 0.9rem;
+    font-weight: 300;
 }
 
 .personal-information {
-    height: 240px;
+    height: 210px;
     background-color: var(--primary-color);
     display: flex;
     align-items: center;
@@ -45,6 +46,7 @@ footer p {
     display: grid;
     place-items: center;
     transition: all 400ms ease-in-out;
+    cursor: pointer ;
 }
 
 .contact-container {
@@ -67,7 +69,7 @@ footer p {
 }
 
 .contact-item-text {
-    font-size: 1.125rem;
+    font-size: 1.1rem;
     font-weight: 300;
 }
 

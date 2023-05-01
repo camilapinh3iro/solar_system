@@ -1,0 +1,56 @@
+.content-planet-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 85px 100px;
+    color: var(--primary-color);
+}
+
+.content-infomation{
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    width: 80vw;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.content-title-information {
+    height: 70px;
+    width: 80vw;
+    border-bottom: 2px solid var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.title-information {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding-right: 90px;
+}
+
+.rated{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.title-rated{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.25rem;
+}
+
+.description-rated{
+    color: var(--card-color);
+    font-size: 1rem;
+}
+
+.result{
+    font-weight: bold;
+    display: grid;
+    place-content: center;
+    padding-right: 60px;
+}
