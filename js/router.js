@@ -1,14 +1,15 @@
 'use strict'
 
 const routes = {
-    // '/' : '/pages/home.html',
-    '/planets' : '/pages/vermelho.html',
-    '/sun' : '.../pages/sun.html'
+    "/": "/pages/index.html",
+    '/planets': '/pages/planets.html',
+    '/sun': '/pages/sun.html'
 }
 
 const route = async () => {
     window.event.preventDefault()
     window.history.pushState({}, "", window.event.target.href)
+    console.log(window.location.pathname);
 
     const path = window.location.pathname
     const route = routes[path]
@@ -20,7 +21,7 @@ const route = async () => {
 
     document.getElementById('root').innerHTML = html
 
-    // console.log(html);
+    console.log(html);
 }
 
-window.route = route
+window.route = route;
