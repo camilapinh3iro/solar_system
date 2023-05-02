@@ -46,6 +46,8 @@
 .description-rated{
     color: var(--card-color);
     font-size: 1rem;
+    width: 50vw;
+    max-width: 750px;
 }
 
 .result{

@@ -18,8 +18,11 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/content-planet-information.css">
+    <link rel="stylesheet" href="./css/content-astro.css">
     <link rel="shortcut icon" type="imagem/x-icon" href="./img/rocket-black-icon.png" />
 
+    <script src="./js/app.js" defer type="module"></script>
     <script src="https://kit.fontawesome.com/56adc94ecd.js" crossorigin="anonymous"></script>
 
     <title>Solar System</title>
@@ -44,12 +47,12 @@
         <article class="container-title-buttons">
             <h1 class="title">Solar System</h1>
             <div class="content-buttons">
-                <a href="./html/sun.html" aria-label="Know more about the sun">
+                <a href="/sun" onclick="route()" aria-label="Know more about the sun">
                     <button>
                         Sun
                     </button>
                 </a>
-                <a href="./html/planets.html" aria-label="Learn more about the planets of the solar system">
+                <a href="/planets" aria-label="Learn more about the planets of the solar system">
                     <button>
                         Planets
                     </button>

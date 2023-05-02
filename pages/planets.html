@@ -17,11 +17,13 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/content-astro.css">
+    <!-- <link rel="stylesheet" href="../css/content-astro.css"> -->
     <link rel="stylesheet" href="../css/card-planet.css">
     <link rel="shortcut icon" type="imagem/x-icon" href="../img/rocket-black-icon.png" />
 
     <script src="https://kit.fontawesome.com/56adc94ecd.js" crossorigin="anonymous"></script>
+    <script src="../js/components/planet-card.js" type="module" defer></script>
+    <script src="../js/components/article-card.js" type="module" defer></script>
 
     <title>Solar System</title>
 </head>
@@ -41,12 +43,17 @@
             <img class="rocket-back-top" src="../img/rocket-grey-icon.png" alt="Illustration of a rocket">
         </a>
 
-        <article class="content-astro">
+        <article-card 
+        title="Planets" 
+        description="The Solar System is a set of celestial bodies that gravitate in the orbit of a sun (a star)."
+        image="../img/take-off-image.jpg"
+        ></article-card>
+        <!-- <article class="content-astro">
             <div class="description-astro">
                 <h1 class="name-astro">Planets</h1>
                 <div class="content-p">
                     <p>
-                        The Solar System is a set of celestial bodies that gravitate in the orbit of a sun (a star)</p>
+                        The Solar System is a set of celestial bodies that gravitate in the orbit of a sun (a star).</p>
                     <p>
                         It consists of eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune.
                     </p>
@@ -57,80 +64,39 @@
 
             </div>
             <img class="astro-image" src="../img/take-off-image.jpg" alt="Sun image">
-        </article>
+        </article> -->
 
         <ul class="content-card-planets">
             <li>
-                <a href="#" class="card" aria-label="Check information about this planet">
-                    <img class="image-planet" src="../img/mercury-image.webp" alt="">
-                    <div class="infos-planet">
-                        <span class="name-planet">Mercury</span>
-                        <span class="position-planet">Planet - #01</span>
-                    </div>
-                </a>
+                <planet-card image="../img/mercury-image.webp" name="Mercury" position="Planet - #01"></planet-card>
             </li>
             <li>
-                <a href="#" class="card">
-                    <img class="image-planet" src="../img/venus-image.jpg" alt="">
-                    <div class="infos-planet">
-                        <span class="name-planet">Venus</span>
-                        <span class="position-planet">Planet - #02</span>
-                    </div>
-                </a>
+                <planet-card image="../img/mercury-image.webp" name="Mercury" position="Planet - #01"></planet-card>
             </li>
             <li>
-                <a href="#" class="card">
-                    <img class="image-planet" src="../img/earth-image.jpg" alt="">
-                    <div class="infos-planet">
-                        <span class="name-planet">Earth</span>
-                        <span class="position-planet">Planet - #03</span>
-                    </div>
-                </a>
+                <planet-card image="../img/mercury-image.webp" name="Mercury" position="Planet - #01"></planet-card>
             </li>
             <li>
-                <a href="#" class="card">
-                    <img class="image-planet" src="../img/mars-image.webp" alt="">
-                    <div class="infos-planet">
-                        <span class="name-planet">Mars</span>
-                        <span class="position-planet">Planet - #04</span>
-                    </div>
-                </a>
+                <planet-card image="../img/mercury-image.webp" name="Mercury" position="Planet - #01"></planet-card>
             </li>
             <li>
-                <a href="#" class="card">
-                    <img class="image-planet" src="../img/jupiter-image.png" alt="">
-                    <div class="infos-planet">
-                        <span class="name-planet">Jupiter</span>
-                        <span class="position-planet">Planet - #05</span>
-                    </div>
-                </a>
+                <planet-card image="../img/mercury-image.webp" name="Mercury" position="Planet - #01"></planet-card>
             </li>
             <li>
-                <a href="#" class="card">
-                    <img class="image-planet" src="../img/saturn-image.jpg" alt="">
-                    <div class="infos-planet">
-                        <span class="name-planet">Saturn</span>
-                        <span class="position-planet">Planet - #06</span>
-                    </div>
-                </a>
+                <planet-card image="../img/mercury-image.webp" name="Mercury" position="Planet - #01"></planet-card>
             </li>
             <li>
-                <a href="#" class="card">
-                    <img class="image-planet" src="../img/uranus-image.jpg" alt="">
-                    <div class="infos-planet">
-                        <span class="name-planet">Uranus</span>
-                        <span class="position-planet">Planet - #07</span>
-                    </div>
-                </a>
+                <planet-card image="../img/mercury-image.webp" name="Mercury" position="Planet - #01"></planet-card>
             </li>
             <li>
-                <a href="#" class="card">
+                <planet-card image="../img/mercury-image.webp" name="Mercury" position="Planet - #01"></planet-card>
+                <!-- <a href="#" class="card">
                     <img class="image-planet" src="../img/neptune-image.png" alt="">
                     <div class="infos-planet">
                         <span class="name-planet">Neptune</span>
                         <span class="position-planet">Planet - #08</span>
                     </div>
-                </a>
+                </a> -->
             </li>
         </ul>
 
