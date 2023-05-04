@@ -25,8 +25,9 @@
     <script src="https://kit.fontawesome.com/56adc94ecd.js" crossorigin="anonymous"></script>
     <script src="../js/components/planet-card.js" type="module" defer></script>
     <script src="../js/components/article-card.js" type="module" defer></script>
+    <script src="../js/components/table.js" type="module" defer></script>
 
-    <script src="./js/app.js" defer type="module"></script>
+    <script src="../js/sun.js" defer type="module"></script>
 
     <title>Solar System</title>
 </head>
@@ -46,139 +47,13 @@
             <img class="rocket-back-top" src="../img/rocket-grey-icon.png" alt="Illustration of a rocket">
         </a>
 
-        <article-card 
-        name="Sun" 
-        description="The Sun is a star located at the center of our solar system. Its gravity keeps it spinning in its orbit from the largest planets to tiny particles of debris. In the interior of the Sun, enormous amounts of energy are produced through fusion reactions of
-        hydrogen into helium. This intense energy is our source of light and heat and without it there would be no life on Earth."
-        image="../img/sun-image.jpg"
-        ></article-card>
+        <article-card name="Sun"
+            description="The Sun is a star located at the center of our solar system. Its gravity keeps it spinning in its orbit from the largest planets to tiny particles of debris. 
+            In the interior of the Sun, enormous amounts of energy are produced through fusion reactions of
+            hydrogen into helium. This intense energy is our source of light and heat and without it there would be no life on Earth."
+            image="../img/sun-image.jpg"></article-card>
 
-        <div class="content-planet-information">
-            <div class="content-title-information">
-                <span class="title-information">Characteristics</span>
-                <span class="title-information">Result</span>
-            </div>
-            <div class="content-information">
-                <div class="rated">
-                    <span class="title-rated">Moons</span>
-                    <span class="description-rated">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque
-                        aliquid incidunt pariatur ipsa quam laboriosam tempore exercitationem veniam deserunt id
-                        explicabo
-                        nesciunt, quo magnam doloribus aliquam ratione voluptates sunt.</span>
-                </div>
-                <div class="result">
-                    <span>Phobos, Deïmos</span>
-                </div>
-            </div>
-            <div class="content-infomation">
-                <div class="rated">
-                    <span class="title-rated">Moons</span>
-                    <span class="description-rated">Name of all satellites of this planet</span>
-                </div>
-                <div class="result">
-                    <span>Phobos, Deïmos</span>
-                </div>
-            </div>
-            <div class="content-infomation">
-                <div class="rated">
-                    <span class="title-rated">Moons</span>
-                    <span class="description-rated">Name of all satellites of this planet</span>
-                </div>
-                <div class="result">
-                    <span>Phobos, Deïmos</span>
-                </div>
-            </div>
-            <div class="content-infomation">
-                <div class="rated">
-                    <span class="title-rated">Moons</span>
-                    <span class="description-rated">Name of all satellites of this planet</span>
-                </div>
-                <div class="result">
-                    <span>Phobos, Deïmos</span>
-                </div>
-            </div>
-            <div class="content-infomation">
-                <div class="rated">
-                    <span class="title-rated">Moons</span>
-                    <span class="description-rated">Name of all satellites of this planet</span>
-                </div>
-                <div class="result">
-                    <span>Phobos, Deïmos</span>
-                </div>
-            </div>
-            <div class="content-infomation">
-                <div class="rated">
-                    <span class="title-rated">Moons</span>
-                    <span class="description-rated">Name of all satellites of this planet</span>
-                </div>
-                <div class="result">
-                    <span>Phobos, Deïmos</span>
-                </div>
-            </div>
-            <div class="content-infomation">
-                <div class="rated">
-                    <span class="title-rated">Moons</span>
-                    <span class="description-rated">Name of all satellites of this planet</span>
-                </div>
-                <div class="result">
-                    <span>Phobos, Deïmos</span>
-                </div>
-            </div>
-            <div class="content-infomation">
-                <div class="rated">
-                    <span class="title-rated">Moons</span>
-                    <span class="description-rated">Name of all satellites of this planet</span>
-                </div>
-                <div class="result">
-                    <span>Phobos, Deïmos</span>
-                </div>
-            </div>
-            <div class="content-infomation">
-                <div class="rated">
-                    <span class="title-rated">Moons</span>
-                    <span class="description-rated">Name of all satellites of this planet</span>
-                </div>
-                <div class="result">
-                    <span>Phobos, Deïmos</span>
-                </div>
-            </div>
-            <div class="content-infomation">
-                <div class="rated">
-                    <span class="title-rated">Moons</span>
-                    <span class="description-rated">Name of all satellites of this planet</span>
-                </div>
-                <div class="result">
-                    <span>Phobos, Deïmos</span>
-                </div>
-            </div>
-            <div class="content-infomation">
-                <div class="rated">
-                    <span class="title-rated">Moons</span>
-                    <span class="description-rated">Name of all satellites of this planet</span>
-                </div>
-                <div class="result">
-                    <span>Phobos, Deïmos</span>
-                </div>
-            </div>
-            <div class="content-infomation">
-                <div class="rated">
-                    <span class="title-rated">Moons</span>
-                    <span class="description-rated">Name of all satellites of this planet</span>
-                </div>
-                <div class="result">
-                    <span>Phobos, Deïmos</span>
-                </div>
-            </div>
-            <div class="content-infomation">
-                <div class="rated">
-                    <span class="title-rated">Moons</span>
-                    <span class="description-rated">Name of all satellites of this planet</span>
-                </div>
-                <div class="result">
-                    <span>Phobos, Deïmos</span>
-                </div>
-            </div>
-        </div>
+        <div id="contentTable"></div>
 
         <div class="personal-information">
             <div class="content-span-icons">

@@ -8,40 +8,40 @@ class card extends HTMLElement {
         this.shadow = this.attachShadow({ mode: 'open' })
         this.semimajorAxis = 'semimajorAxis';
         this.perihelion = 'perihelion';
-        // this.aphelion = 'aphelion';
-        // this.eccentricity = 'eccentricity';
-        // this.inclination = 'inclination';
-        // this.density = 'density';
-        // this.gravity = 'gravity';
-        // this.meanRadius = 'meanRadius';
-        // this.equaRadius = 'equaRadius';
-        // this.polarRadius = 'polarRadius';
-        // this.flattening = 'flattening';
-        // this.escape = 'escape';
-        // this.sideralOrbit = 'sideralOrbit';
-        // this.sideralRotation = 'sideralRotation';
-        // this.avgTemp = 'avgTemp';
-        // this.axialTilt = 'axialTilt';
+        this.aphelion = 'aphelion';
+        this.eccentricity = 'eccentricity';
+        this.inclination = 'inclination';
+        this.density = 'density';
+        this.gravity = 'gravity';
+        this.meanRadius = 'meanRadius';
+        this.equaRadius = 'equaRadius';
+        this.polarRadius = 'polarRadius';
+        this.flattening = 'flattening';
+        this.escape = 'escape';
+        this.sideralOrbit = 'sideralOrbit';
+        this.sideralRotation = 'sideralRotation';
+        this.avgTemp = 'avgTemp';
+        this.axialTilt = 'axialTilt';
     }
 
     static get observedAttributes() {
         return [
-            'semimajorAxis',
-            'perihelion'
-            // 'aphelion',
-            // 'eccentricity',
-            // 'inclination',
-            // 'density',
-            // 'gravity',
-            // 'meanRadius',
-            // 'equaRadius',
-            // 'polarRadius',
-            // 'flattening',
-            // 'escape',
-            // 'sideralOrbit',
-            // 'sideralRotation',
-            // 'avgTemp',
-            // 'axialTilt',
+            'semimajoraxis',
+            'perihelion',
+            'aphelion',
+            'eccentricity',
+            'inclination',
+            'density',
+            'gravity',
+            'meanradius',
+            'equaradius',
+            'polarradius',
+            'flattening',
+            'escape',
+            'sideralorbit',
+            'sideralrotation',
+            'avgtemp',
+            'axialtilt',
         ]
     }
 
@@ -127,7 +127,6 @@ class card extends HTMLElement {
             place-content: center;
             padding-right: 60px;
         }
-
         `
 
         return css
@@ -148,42 +147,41 @@ class card extends HTMLElement {
         titleInformation2.classList.add('title-information')
         titleInformation2.textContent = 'Result'
 
-
+        contentTitle.append(titleInformation, titleInformation2)
+        contentAll.append(contentTitle)
 
         for (let index = 0; index < characteristics.length; index++) {
             console.log('oi');
+            const contentInformation = document.createElement('div')
+            contentInformation.classList.add('content-information')
+
+            const rated = document.createElement('div')
+            rated.classList.add('rated')
+
+            const titleRated = document.createElement('span')
+            titleRated.classList.add('title-rated')
+            titleRated.textContent = characteristics[index].name
+
+            const descriptionRated = document.createElement('span')
+            descriptionRated.classList.add('decription-rated')
+            descriptionRated.textContent = characteristics[index].description
+
+            const result = document.createElement('div')
+            result.classList.add('result')
+
+            const spanResult = document.createElement('span')
+            spanResult.textContent = this.equaradius
+
+            result.append(spanResult)
+            rated.append(titleRated, descriptionRated)
+            contentInformation.append(rated, result)
+
+            contentAll.append(contentInformation)
         }
-
-
-        const contentInformation = document.createElement('div')
-        contentInformation.classList.add('content-information')
-
-        const rated = document.createElement('div')
-        rated.classList.add('rated')
-
-        const titleRated = document.createElement('span')
-        titleRated.classList.add('title-rated')
-        titleRated.textContent = 'Semi-major Axis'
-
-        const descriptionRated = document.createElement('span')
-        descriptionRated.classList.add('decription-rated')
-        this.textContent = 'testeeeeeeeee'
-
-        const result = document.createElement('div')
-        result.classList.add('result')
-
-        const spanResult = document.createElement('span')
-        // spanResult.classList.add('')
-        spanResult.textContent = this.perihelion
-
-        result.append(spanResult)
-        rated.append(titleRated, descriptionRated)
-        contentInformation.append(rated, result)
-        contentTitle.append(titleInformation, titleInformation2)
-        contentAll.append(contentTitle, contentInformation)
 
         return contentAll
     }
 }
 
-customElements.define('table-infos', card); 
+customElements.define('table-infos', card);
+

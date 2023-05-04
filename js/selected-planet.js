@@ -1,6 +1,5 @@
 'use strict'
 
-// import './app.js'
 import { planets } from "./description-planets.js"
 
 const createArticle = () => {
@@ -54,26 +53,25 @@ const table = async () => {
 
     const root = document.getElementById('contentTable')
 
-
     const table = document.createElement('table-infos')
-    // table.setAttribute('semimajorAxis', data.semimajorAxis)
+    table.setAttribute('semimajorAxis', data.semimajorAxis)
     table.setAttribute('perihelion', data.perihelion)
-    // table.setAttribute('aphelion', data.aphelion)
-    // table.setAttribute('eccentricity', data.eccentricity)
-    // table.setAttribute('inclination', data.inclination)
-    // table.setAttribute('density', data.density)
-    // table.setAttribute('gravity', data.gravity)
-    // table.setAttribute('meanRadius', data.meanRadius)
-    // table.setAttribute('equaRadius', data.equaRadius)
-    // table.setAttribute('polarRadius', data.polarRadius)
-    // table.setAttribute('flattening', data.flattening)
-    // table.setAttribute('escape', data.escape)
-    // table.setAttribute('sideralOrbit', data.sideralOrbit)
-    // table.setAttribute('sideralOrbit', data.sideralOrbit)
-    // table.setAttribute('sideralOrbit', data.sideralOrbit)
-    // table.setAttribute('sideralRotation', data.sideralRotation)
-    // table.setAttribute('avgTemp', data.avgTemp)
-    // table.setAttribute('axialTilt', data.axialTilt)
+    table.setAttribute('aphelion', data.aphelion)
+    table.setAttribute('eccentricity', data.eccentricity)
+    table.setAttribute('inclination', data.inclination)
+    table.setAttribute('density', data.density)
+    table.setAttribute('gravity', data.gravity)
+    table.setAttribute('meanRadius', data.meanRadius)
+    table.setAttribute('equaRadius', data.equaRadius)
+    table.setAttribute('polarRadius', data.polarRadius)
+    table.setAttribute('flattening', data.flattening)
+    table.setAttribute('escape', data.escape)
+    table.setAttribute('sideralOrbit', data.sideralOrbit)
+    table.setAttribute('sideralOrbit', data.sideralOrbit)
+    table.setAttribute('sideralOrbit', data.sideralOrbit)
+    table.setAttribute('sideralRotation', data.sideralRotation)
+    table.setAttribute('avgTemp', data.avgTemp)
+    table.setAttribute('axialTilt', data.axialTilt)
 
     root.append(table)
 

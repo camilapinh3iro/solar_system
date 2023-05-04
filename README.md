@@ -8,11 +8,13 @@
 |![](./img/screenshot-mobile.png)|![](./img/screenshot-desktop.png)|
 
 
-[Clique aqui]() para acessar o site. 
+[Clique aqui](https://solarsystem-pwf.netlify.app/) para acessar o site. 
 
 ## **Escopo**
 
 O objetivo do projeto é realizar o consumo de uma API Pública. Escolhi como tema o Sistema Solar. 
+
+- [Link da API](hhttps://api.le-systeme-solaire.net/)
 
 ## **Tecnologias Utilizadas**
 
@@ -29,20 +31,24 @@ Segue o link:
 
 - [Link do Figma](https://www.figma.com/file/h6MHpUzeS9PW2gzmtehGOv/Solar-System?t=y0PX2mk1lxQrKAEh-0)
 
+## **Deploy**
+A hospedagem do site foi feita no Netlify. Segue o link: 
+
+- [Link do deploy no Netlify](https://solarsystem-pwf.netlify.app/)
 
 ## **Critérios de avaliação**
 
 - [ ]  Documentou problemas, se encontrado, para futuras consultas?
-- [ ]  Foi criado o layout no figma?
-- [ ]  A página foi construída seguindo o planejado no Figma?
+- [x]  Foi criado o layout no figma?
+- [x]  A página foi construída seguindo o planejado no Figma?
 - [ ]  A página funciona em dispositivos diferentes?
-- [ ]  Foi consumida a API escolhida?
-- [ ]  Foi criado web componentes?
+- [x]  Foi consumida a API escolhida?
+- [x]  Foi criado web componentes?
 - [ ]  Foi criado um padrão de roteamente para as paginas?
 - [ ]  As funções foram criadas seguindo à boa prática de responsabilidade única?
 - [ ]  Quando possível, foi criado funções puras?
 - [x]  O projeto está publicado?
-- [ ]  Foi criado o arquivo README.md?
+- [x]  Foi criado o arquivo README.md?
 
 
 ## **Autora**

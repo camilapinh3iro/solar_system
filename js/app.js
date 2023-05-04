@@ -30,8 +30,6 @@ const sun = async function() {
     return planets
 }
 
-// console.log('sun: ' + await sun());
-
 const loadCards = async () => {
     const data = await sun();
 
@@ -51,7 +49,6 @@ const loadCards = async () => {
     let cards = teste.map(createCard);
 
     container.replaceChildren(...cards);
-    // console.log(cards.name);
 };
 
 loadCards();
