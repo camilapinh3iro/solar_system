@@ -34,9 +34,9 @@ const loadCards = async () => {
     });
     console.log(planetsArray);
     console.log(planetsJson);
-    const cards = createCard(planetsJson)
+    // const cards = createCard(planetsJson)
 
-    console.log(cards);
+    // console.log(cards);
 
     container.replaceChildren(...cards);
 };
