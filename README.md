@@ -14,7 +14,7 @@
 
 O objetivo do projeto é realizar o consumo de uma API Pública. Escolhi como tema o Sistema Solar. 
 
-- [Link da API](hhttps://api.le-systeme-solaire.net/)
+- [Link da API](https://api.le-systeme-solaire.net/)
 
 ## **Tecnologias Utilizadas**
 
