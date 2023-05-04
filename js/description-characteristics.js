@@ -1,85 +1,82 @@
 export const characteristics = [
     {
-        id: "1",
-        name: "semimajorAxis",
-        description: "Uranus—seventh planet from the Sun—rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side."
+        "id": 1,
+        "name": "Semi-major Axis",
+        "description": "The Semi-major Axis is the orbital parameter that determines the average distance between the planet and its star. The Semi-major Axis of a circular orbit is equal to its radius."
     },
     {
-        id: "2",
-        name: "perihelion",
-        description: "Neptune—the eighth and most distant major planet orbiting our Sun—is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations."
+        "id": 2,
+        "name": "Perihelion",
+        "description": "The term 'Perihelion' refers to the point in the orbit of a planet or other astronomical body, at which it is closest to the sun."
     },
     {
-        id: "3",
-        name: "aphelion",
-        description: "Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red Spot is a centuries-old storm bigger than Earth."
+        "id": 3,
+        "name": "Aphelion",
+        "description": "Aphelion is the point at which an orbiting body is furthest from the sun."
     },
     {
-        id: "4",
-        name: "eccentricity",
-        description: "Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was – billions of years ago – wetter and warmer, with a thicker atmosphere."
+        "id": 4,
+        "name": "Eccentricity",
+        "description": "Orbital Eccentricity is a measure that represents the departure of an orbit from the circular shape. It is usually represented by values ​​between 0 and 1, but values ​​greater than 1 are observed in some orbits of comets or space probes."
     },
     {
-        id: "5",
-        name: "inclination",
-        description: "From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as 11 times brighter."
+        "id": 5,
+        "name": "Inclination",
+        "description": "Orbital Inclination measures the inclination of an object's orbit around a celestial body. It is expressed as the angle between a reference plane and the orbital plane or direction axis of the orbiting object."
     },
     {
-        id: "6",
-        name: "density",
-        description: "Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The other giant planets have rings, but none are as spectacular as Saturn's."
-    }, 
-    {
-        id: "7",
-        name: "gravity",
-        description: "Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface."
-    }, 
-    {
-        id: "8",
-        name: "meanRadius",
-        description: "Similar in structure and size to Earth, Venus's thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system."
-    }, 
-    {
-        id: "9",
-        name: "equaRadius",
-        description: "Uranus—seventh planet from the Sun—rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side."
+        "id": 6,
+        "name": "Density",
+        "description": "The Density of a body is defined as the quotient between the mass and the volume of that body. In this way, it can be said that density measures the degree of concentration of mass in a given volume."
     },
     {
-        id: "10",
-        name: "polarRadius",
-        description: "Neptune—the eighth and most distant major planet orbiting our Sun—is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations."
+        "id": 7,
+        "name": "Gravity",
+        "description": "It refers to the acceleration that the body imparts to objects on or near its surface through its gravitational force."
     },
     {
-        id: "11",
-        name: "flattening",
-        description: "Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red Spot is a centuries-old storm bigger than Earth."
+        "id": 8,
+        "name": "Mean Radius",
+        "description": "The Mean Radius of an orbit is half the distance between aphelion and perihelion. Knowing this, Kepler's third law allows us to infer that the farther (on average) a planet is from the Sun, the greater its period of translation, that is, the greater the time it takes to complete one revolution."
     },
     {
-        id: "12",
-        name: "escape",
-        description: "Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was – billions of years ago – wetter and warmer, with a thicker atmosphere."
+        "id": 9,
+        "name": "Equa Radius",
+        "description": "The Equatorial Radius is the distance from the center to the surface along a line perpendicular to that axis."
     },
     {
-        id: "13",
-        name: "sideralOrbit",
-        description: "From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as 11 times brighter."
+        "id": 10,
+        "name": "Polar Radius",
+        "description": "The Polar Radius is the distance from the center to the surface along that axis."
     },
     {
-        id: "14",
-        name: "sideralRotation",
-        description: "Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The other giant planets have rings, but none are as spectacular as Saturn's."
-    }, 
+        "id": 11,
+        "name": "Flattening",
+        "description": "It is a measure of the compression of a circle or a sphere along a diameter to form an ellipse or an ellipsoid of revolution respectively."
+    },
     {
-        id: "15",
-        name: "avgTemp",
-        description: "Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface."
-    }, 
+        "id": 12,
+        "name": "Escape",
+        "description": "The velocity with which a body must be launched from the surface of a planet so that it goes to infinity, never returning, is called Escape Velocity. The escape velocity is obtained from the condition that at infinity the mechanical energy of the launched body is zero."
+    },
     {
-        id: "16",
-        name: "axialTilt",
-        description: "Similar in structure and size to Earth, Venus's thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system."
+        "id": 13,
+        "name": "Sideral Orbit",
+        "description": "Sideral Orbital time for body around another one (the Sun or a planet) in earth day."
+    },
+    {
+        "id": 14,
+        "name": "Sideral Rotation",
+        "description": "Sideral Rotation, necessary time to turn around itself, in hour."
+    },
+    {
+        "id": 15,
+        "name": "Avg Temp",
+        "description": "Mean Temperature in K."
+    },
+    {
+        "id": 16,
+        "name": "Axial Tilt",
+        "description": "The Axial Inclination or obliquity of a celestial body is the angle between the plane of its equator and the plane of its orbit."
     }
-
-
-
 ]

@@ -70,7 +70,6 @@ class card extends HTMLElement {
         }
 
         .content-planet-information {
-            // heigth: 3000px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -97,7 +96,7 @@ class card extends HTMLElement {
         
         .title-information {
             font-family: 'Anton', sans-serif;
-            font-size: 1.6rem;
+            font-size: 1.7rem;
             text-transform: uppercase;
             padding-right: 90px;
         }
@@ -118,7 +117,7 @@ class card extends HTMLElement {
             color: var(--card-color);
             font-size: 1rem;
             width: 50vw;
-            max-width: 750px;
+            max-width: 700px;
         }
         
         .result{
@@ -163,7 +162,7 @@ class card extends HTMLElement {
             titleRated.textContent = characteristics[index].name
 
             const descriptionRated = document.createElement('span')
-            descriptionRated.classList.add('decription-rated')
+            descriptionRated.classList.add('description-rated')
             descriptionRated.textContent = characteristics[index].description
 
             const result = document.createElement('div')
