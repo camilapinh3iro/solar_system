@@ -9,7 +9,7 @@ class card extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ['image', 'name', 'position']
+        return ['image', 'name']
     }
 
     attributeChangedCallback(nameAttr, oldValue, newValue) {

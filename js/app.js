@@ -6,13 +6,13 @@ const createCard = (planet, indice) => {
     const li = document.createElement('li')
 
     const card = document.createElement('planet-card')
-    card.setAttribute('image', `../img/${planet}-image.png`)
-    card.setAttribute('name', planet)
+    card.setAttribute('image', `../img/${planet.englishName}-image.png`)
+    card.setAttribute('name', planet.englishName)
 
     card.onclick = () => {
-        localStorage.setItem("name", planet);
-        localStorage.setItem("image", `../img/${planet}-image.png`);
-        localStorage.setItem("indice", indice)
+        localStorage.setItem("name", planet.englishName);
+        localStorage.setItem("indice", indice);
+        localStorage.setItem("id", planet.id)
     };
 
     li.append(card)
@@ -44,13 +44,14 @@ const loadCards = async () => {
     const container = document.getElementById("content-card-planets");
 
     const teste = filteredPlanets.map(element => {
-        return element.englishName
+        // console.log(element.semimajorAxis);
+        return element
     });
 
     let cards = teste.map(createCard);
 
     container.replaceChildren(...cards);
-    console.log(cards);
+    // console.log(cards.name);
 };
 
 loadCards();
