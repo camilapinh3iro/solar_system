@@ -41,7 +41,7 @@ Segue o link:
 - [ ]  Foi criado um padrão de roteamente para as paginas?
 - [ ]  As funções foram criadas seguindo à boa prática de responsabilidade única?
 - [ ]  Quando possível, foi criado funções puras?
-- [ ]  O projeto está publicado?
+- [x]  O projeto está publicado?
 - [ ]  Foi criado o arquivo README.md?
 
 

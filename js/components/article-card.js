@@ -1,16 +1,17 @@
 'use strict';
 
+
 class card extends HTMLElement {
     constructor() {
         super()
         this.shadow = this.attachShadow({ mode: 'open' })
-        this.title = 'Title';
+        this.name = 'Name';
         this.description = 'Page subject description.';
         this.image = null;
     }
 
     static get observedAttributes() {
-        return ['title', 'description', 'image']
+        return ['name', 'description', 'image']
     }
 
     attributeChangedCallback(nameAttr, oldValue, newValue) {
@@ -57,7 +58,7 @@ class card extends HTMLElement {
             padding-top: 85px;
         }
         
-        .title{
+        .title-astro{
             font-size: 6rem;
             letter-spacing: 2px;
             font-family: 'Anton', sans-serif;
@@ -81,9 +82,9 @@ class card extends HTMLElement {
         contentSubjectDescription.classList.add('description')
 
         const title = document.createElement('h1')
-        title.classList.add('title')
-        title.textContent = this.title
-
+        title.classList.add('title-astro')
+        title.textContent = this.name
+        
         const contentP = document.createElement('div')
         contentP.classList.add('content-p')
 

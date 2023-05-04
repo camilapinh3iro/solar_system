@@ -2,18 +2,24 @@
 
 import './router.js'
 
-const createCard = (planet) => {
+const createCard = (planet, indice) => {
     const li = document.createElement('li')
 
     const card = document.createElement('planet-card')
-    card.setAttribute('image', `../img/earth-image.jpg`)
-    card.setAttribute('name', planet.name)
+    card.setAttribute('image', `../img/${planet}-image.png`)
+    card.setAttribute('name', planet)
+
+    card.onclick = () => {
+        localStorage.setItem("name", planet);
+        localStorage.setItem("image", `../img/${planet}-image.png`);
+        localStorage.setItem("indice", indice)
+    };
 
     li.append(card)
     return li
 }
 
-const loadCards = async () => {
+const sun = async function() {
     const url = `https://api.le-systeme-solaire.net/rest/bodies/`;
 
     const response = await fetch(url);
@@ -21,7 +27,15 @@ const loadCards = async () => {
 
     let planets = data.bodies;
 
-    let filteredPlanets = planets.filter(planet => {
+    return planets
+}
+
+// console.log('sun: ' + await sun());
+
+const loadCards = async () => {
+    const data = await sun();
+
+    let filteredPlanets = data.filter(planet => {
         return planet.isPlanet;
     });
 
@@ -29,11 +43,15 @@ const loadCards = async () => {
 
     const container = document.getElementById("content-card-planets");
 
-    // const cards = createCard(filteredPlanets)
+    const teste = filteredPlanets.map(element => {
+        return element.englishName
+    });
 
-    // console.log(cards);
+    let cards = teste.map(createCard);
 
-    // container.replaceChildren(...cards);
+    container.replaceChildren(...cards);
+    console.log(cards);
 };
 
 loadCards();
+

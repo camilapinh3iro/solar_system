@@ -6,7 +6,6 @@ class card extends HTMLElement {
         this.shadow = this.attachShadow({ mode: 'open' })
         this.image = null;
         this.name = 'Planet name';
-        this.position = 'Position of the planet';
     }
 
     static get observedAttributes() {
@@ -15,6 +14,7 @@ class card extends HTMLElement {
 
     attributeChangedCallback(nameAttr, oldValue, newValue) {
         this[nameAttr] = newValue
+        
     }
 
     connectedCallback() {
@@ -70,7 +70,7 @@ class card extends HTMLElement {
             text-transform: uppercase;
         }
 
-        .position-planet{
+        .planet-span{
             color: var(--card-color);
             text-transform: uppercase;
             font-size: 1.2rem;
@@ -83,7 +83,7 @@ class card extends HTMLElement {
 
     component() {
         const card = document.createElement('a')
-        card.href = '#'
+        card.href = '../pages/selected-planet.html'
         card.classList.add('card')
         card.ariaLabel = 'Check information about this planet'
 
@@ -92,6 +92,10 @@ class card extends HTMLElement {
         image.src = this.image
         image.alt = 'Image planet'
 
+        const planetSpan = document.createElement('span')
+        planetSpan.classList.add('planet-span')
+        planetSpan.textContent = 'Planet'
+
         const contentInfos = document.createElement('div')
         contentInfos.classList.add('infos-planet')
 
@@ -99,11 +103,7 @@ class card extends HTMLElement {
         namePlanet.classList.add('name-planet')
         namePlanet.textContent = this.name
 
-        const positionPlanet = document.createElement('span')
-        positionPlanet.classList.add('position-planet')
-        positionPlanet.textContent = this.position
-
-        contentInfos.append(namePlanet, positionPlanet)
+        contentInfos.append(planetSpan, namePlanet)
         card.append(image, contentInfos)
 
         return card 
