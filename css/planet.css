@@ -1,0 +1,8 @@
+#content-card-planets{
+    padding: 85px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}

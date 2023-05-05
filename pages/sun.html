@@ -12,22 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/colors.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/content-astro.css">
-    <link rel="stylesheet" href="../css/card-planet.css">
-    <link rel="stylesheet" href="../css/content-planet-information.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" type="imagem/x-icon" href="../img/rocket-black-icon.png" />
 
     <script src="https://kit.fontawesome.com/56adc94ecd.js" crossorigin="anonymous"></script>
-    <script src="../js/components/planet-card.js" type="module" defer></script>
-    <script src="../js/components/article-card.js" type="module" defer></script>
-    <script src="../js/components/table.js" type="module" defer></script>
-
+    
     <script src="../js/sun.js" defer type="module"></script>
+    <script src="../js/personal-information.js" type="module" defer></script>
 
     <title>Solar System</title>
 </head>
@@ -47,68 +38,10 @@
             <img class="rocket-back-top" src="../img/rocket-grey-icon.png" alt="Illustration of a rocket">
         </a>
 
-        <article-card name="Sun"
-            description="The Sun is a star located at the center of our solar system. Its gravity keeps it spinning in its orbit from the largest planets to tiny particles of debris. 
-            In the interior of the Sun, enormous amounts of energy are produced through fusion reactions of
-            hydrogen into helium. This intense energy is our source of light and heat and without it there would be no life on Earth."
-            image="../img/sun-image.jpg"></article-card>
+        <div id="content-article"></div>
 
         <div id="contentTable"></div>
 
-        <div class="personal-information">
-            <div class="content-span-icons">
-                <span class="follow">Follow</span>
-
-                <ul class="social-container">
-                    <li class="social">
-                        <a href="https://www.linkedin.com/in/camila-pinheiro-4a4676255/" target="_blank"
-                            aria-label="Check out my Linkedin account">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="social">
-                        <a href="https://twitter.com/camilapinh3iro" target="_blank"
-                            aria-label="Check out my Twitter accountm">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="social">
-                        <a href="https://www.instagram.com/camilapinh3iro/" target="_blank"
-                            aria-label="Check out my Instagram account">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="social">
-                        <a href="https://github.com/camilapinh3iro" target="_blank"
-                            aria-label="Check out my Github account">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <ul class="contact-container">
-                <li>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span class="contact-item-text">pinheirocamila49800@gmail.com</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-phone contato-item__icon"></i>
-                        <span class="contact-item-text">(11) 4774-4700</span>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span class="contact-item-text">Itapevi - SP</span>
-                    </div>
-                </li>
-            </ul>
-        </div>
     </main>
 
     <footer>

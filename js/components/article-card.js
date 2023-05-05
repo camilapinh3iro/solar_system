@@ -93,7 +93,6 @@ class card extends HTMLElement {
         const image = document.createElement('img')
         image.classList.add('image-subject')
         image.src = this.image
-        // image.alt = ''
         
         contentSubjectDescription.append(title, contentP)
         contentP.append(paragraph)

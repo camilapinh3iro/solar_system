@@ -2,7 +2,7 @@
 
 import { characteristics } from '../description-characteristics.js'
 
-class card extends HTMLElement {
+class table extends HTMLElement {
     constructor() {
         super()
         this.shadow = this.attachShadow({ mode: 'open' })
@@ -182,5 +182,5 @@ class card extends HTMLElement {
     }
 }
 
-customElements.define('table-infos', card);
+customElements.define('table-infos', table);
 

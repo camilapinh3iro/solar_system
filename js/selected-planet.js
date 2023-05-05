@@ -1,9 +1,11 @@
 'use strict'
 
+import './components/article-card.js'
+import './components/table.js'
+
 import { planets } from "./description-planets.js"
 
-const createArticle = () => {
-
+const createArticleCard = () => {
     let name = localStorage.getItem('name')
     let indice = localStorage.getItem('indice')
 
@@ -18,7 +20,7 @@ const createArticle = () => {
     return container
 }
 
-createArticle()
+createArticleCard()
 
 const api = async () => {
     let id = localStorage.getItem('id')
@@ -28,28 +30,27 @@ const api = async () => {
     const data = await response.json();
 
     return {
-        semimajorAxis: data.semimajorAxis, 
-        perihelion: data.perihelion, 
-        aphelion: data.aphelion, 
-        eccentricity: data.eccentricity, 
-        inclination: data.inclination, 
-        density: data.density, 
-        gravity: data.density, 
-        meanRadius: data.meanRadius, 
-        equaRadius: data.equaRadius, 
-        polarRadius: data.polarRadius, 
-        flattening: data.flattening, 
-        escape: data.escape, 
-        sideralOrbit: data.sideralOrbit, 
-        sideralRotation: data.sideralRotation, 
-        avgTemp: data.avgTemp, 
+        semimajorAxis: data.semimajorAxis,
+        perihelion: data.perihelion,
+        aphelion: data.aphelion,
+        eccentricity: data.eccentricity,
+        inclination: data.inclination,
+        density: data.density,
+        gravity: data.density,
+        meanRadius: data.meanRadius,
+        equaRadius: data.equaRadius,
+        polarRadius: data.polarRadius,
+        flattening: data.flattening,
+        escape: data.escape,
+        sideralOrbit: data.sideralOrbit,
+        sideralRotation: data.sideralRotation,
+        avgTemp: data.avgTemp,
         axialTilt: data.axialTilt
     }
 }
 
-
 const table = async () => {
-    const data = await api ()
+    const data = await api()
 
     const root = document.getElementById('contentTable')
 

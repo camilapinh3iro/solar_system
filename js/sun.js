@@ -1,5 +1,22 @@
 'use strict'
 
+import './components/table.js'
+import './components/article-card.js'
+
+const createArticleCard = () => {
+    const root = document.getElementById('content-article')
+
+    const card = document.createElement('article-card')
+    card.setAttribute('name', 'Sun')
+    card.setAttribute('description', 'The Sun is a star located at the center of our solar system. Its gravity keeps it spinning in its orbit from the largest planets to tiny particles of debris. In the interior of the Sun, enormous amounts of energy are produced through fusion reactions of hydrogen into helium. This intense energy is our source of light and heat and without it there would be no life on Earth.')
+    card.setAttribute('image', '../img/sun-image.jpg')
+
+    root.append(card)
+    return root
+}
+
+createArticleCard()
+
 const api = async () => {
     const url = `https://api.le-systeme-solaire.net/rest/bodies/sun`;
 
