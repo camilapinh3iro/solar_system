@@ -1,5 +1,7 @@
 'use strict';
 
+import { getFontAwesomeStyle } from "./get-font-awesome-style.js";
+
 class card extends HTMLElement {
     constructor() {
         super()
@@ -30,6 +32,7 @@ class card extends HTMLElement {
     }
 
     connectedCallback() {
+        this.shadow.appendChild(getFontAwesomeStyle());
         this.shadow.appendChild(this.component());
         this.shadow.appendChild(this.styles());
     }
@@ -46,10 +49,6 @@ class card extends HTMLElement {
         a{
             text-decoration: none;
             color: inherit;
-        }
-
-        i{
-            color: #fff;
         }
 
         .personal-information {
