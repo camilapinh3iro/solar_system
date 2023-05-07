@@ -6,10 +6,11 @@ class card extends HTMLElement {
         this.shadow = this.attachShadow({ mode: 'open' })
         this.image = null;
         this.name = 'Planet name';
+        this.alt = 'Image alt text'
     }
 
     static get observedAttributes() {
-        return ['image', 'name']
+        return ['image', 'name', 'alt']
     }
 
     attributeChangedCallback(nameAttr, oldValue, newValue) {
@@ -45,11 +46,13 @@ class card extends HTMLElement {
             height: 550px;
             border-radius: 30px;
             transition: all 400ms ease-in-out;
+            // filter: grayscale(100%);
         }
 
         .card:hover{
             box-shadow: 4px 5px 10px #9e9d9d;
             transform: scale(1.03);
+            filter: grayscale(0%);
         }
 
         .image-planet{
@@ -90,7 +93,7 @@ class card extends HTMLElement {
         const image = document.createElement('img')
         image.classList.add('image-planet')
         image.src = this.image
-        image.alt = 'Image planet'
+        image.alt = this.alt
 
         const planetSpan = document.createElement('span')
         planetSpan.classList.add('planet-span')

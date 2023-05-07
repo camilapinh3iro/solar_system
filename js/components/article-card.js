@@ -5,12 +5,13 @@ class card extends HTMLElement {
         super()
         this.shadow = this.attachShadow({ mode: 'open' })
         this.name = 'Name';
-        this.description = 'Page subject description.';
+        this.description = 'Page subject description';
         this.image = null;
+        this.alt = 'Image alt text'
     }
 
     static get observedAttributes() {
-        return ['name', 'description', 'image']
+        return ['name', 'description', 'image', 'alt']
     }
 
     attributeChangedCallback(nameAttr, oldValue, newValue) {
@@ -47,7 +48,7 @@ class card extends HTMLElement {
         
         .image-subject{
             height: 600px;
-            width: 600px;
+            width: 720px;
         }
         
         .description{
@@ -93,6 +94,7 @@ class card extends HTMLElement {
         const image = document.createElement('img')
         image.classList.add('image-subject')
         image.src = this.image
+        image.alt = this.alt
         
         contentSubjectDescription.append(title, contentP)
         contentP.append(paragraph)

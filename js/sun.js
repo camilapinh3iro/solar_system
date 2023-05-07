@@ -9,7 +9,8 @@ const createArticleCard = () => {
     const card = document.createElement('article-card')
     card.setAttribute('name', 'Sun')
     card.setAttribute('description', 'The Sun is a star located at the center of our solar system. Its gravity keeps it spinning in its orbit from the largest planets to tiny particles of debris. In the interior of the Sun, enormous amounts of energy are produced through fusion reactions of hydrogen into helium. This intense energy is our source of light and heat and without it there would be no life on Earth.')
-    card.setAttribute('image', '../img/sun-image.jpg')
+    card.setAttribute('image', '../img/sun-image.png')
+    card.setAttribute('alt', 'Illustration of the sun')
 
     root.append(card)
     return root
