@@ -9,10 +9,10 @@ const routes = {
     "/": "/index.html",
     '/sun': '/pages/sun.html',
     '/planets': '/pages/planets.html',
-    '/selected-planet': '/pages/selected-planet.js'
+    '/selected-planet': '/pages/selected-planet.html'
 }
 
-const route = async () => {
+export const route = async () => {
     window.event.preventDefault()
     window.history.pushState({}, "", window.event.target.href)
     console.log(window.location.pathname);
@@ -35,7 +35,7 @@ const route = async () => {
         teste()
     } else if (path == '/planets'){
         loadAll()
-    } else if (path == '/selected-planets'){
+    } else if (path == '/selected-planet'){
         loadAllPlanet()
     }
 

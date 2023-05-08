@@ -2,6 +2,7 @@
 
 import './components/planet-card.js'
 import './components/article-card.js'
+import { route } from './router.js'
 
 const createArticleCard = () => {
     
@@ -26,11 +27,14 @@ const createCard = (planet, indice) => {
     card.setAttribute('image', `../img/${planet.englishName}-image.png`)
     card.setAttribute('name', planet.englishName)
     card.setAttribute('alt', `Illustration of the planet ${planet.englishName}`)
+    card.setAttribute('href', '/selected-planet')
 
     card.onclick = () => {
         localStorage.setItem("name", planet.englishName);
         localStorage.setItem("indice", indice);
         localStorage.setItem("id", planet.id)
+        route()
+        
     };
 
     li.append(card)

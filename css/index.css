@@ -29,8 +29,11 @@ main {
     gap: 35px;
 }
 
-.content-buttons button {
-    background-color: transparent;
+.content-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: transparent; */
     border: 2px solid var(--secondary-color);
     color: var(--secondary-color);
     width: 160px;
@@ -38,12 +41,11 @@ main {
     border-radius: 10px;
     font-weight: 700;
     font-size: 1.25rem;
-    cursor: pointer;
     transition: all 400ms ease-in-out;
     font-family: Roboto, sans-serif;
 }
 
-.content-buttons button:hover {
+.content-buttons a:hover {
     transform: scale(1.1);
 }
 

@@ -16,9 +16,7 @@ const createArticleCard = () => {
     card.setAttribute('name', name)
     card.setAttribute('description', planets[indice].description)
     card.setAttribute('alt', `Illustration of the planet ${name}`)
-
-    card.href = '/selected-planet'
-    card.onclick = "route()"
+ 
 
     container.append(card)
     return container
@@ -87,6 +85,7 @@ const table = async () => {
 // table()
 
 export const loadAllPlanet = () => {
-    table()
     createArticleCard()
+    table()
+   
 }

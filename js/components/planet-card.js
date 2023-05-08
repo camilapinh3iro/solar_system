@@ -7,10 +7,11 @@ class card extends HTMLElement {
         this.image = null;
         this.name = 'Planet name';
         this.alt = 'Image alt text'
+        this.href = 'Link'
     }
 
     static get observedAttributes() {
-        return ['image', 'name', 'alt']
+        return ['image', 'name', 'alt', 'href']
     }
 
     attributeChangedCallback(nameAttr, oldValue, newValue) {
@@ -88,6 +89,7 @@ class card extends HTMLElement {
         const card = document.createElement('a')
         card.classList.add('card')
         card.ariaLabel = 'Check information about this planet'
+        card.href = this.href
 
         const image = document.createElement('img')
         image.classList.add('image-planet')

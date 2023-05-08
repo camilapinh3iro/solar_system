@@ -24,6 +24,8 @@ O objetivo do projeto é realizar o consumo de uma API Pública. Escolhi como te
 - Responsividade
 - JavaScript
 - Web Components
+- Figma 
+- Netlify
 
 ## **Figma**
 Utilizando a ferramenta de design Figma, foi planejado o breakpoint. 
