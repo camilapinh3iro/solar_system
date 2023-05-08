@@ -2,7 +2,7 @@
 
 import './components/personal-information-card.js'
 
-const createPersonalInformation = () => {
+export const createPersonalInformation = () => {
 
     const root = document.getElementById('root')
 
@@ -19,4 +19,3 @@ const createPersonalInformation = () => {
     return root
 }
 
-createPersonalInformation()

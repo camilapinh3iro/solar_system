@@ -86,7 +86,6 @@ class card extends HTMLElement {
 
     component() {
         const card = document.createElement('a')
-        card.href = '../pages/selected-planet.html'
         card.classList.add('card')
         card.ariaLabel = 'Check information about this planet'
 

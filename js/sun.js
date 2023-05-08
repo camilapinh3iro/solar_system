@@ -16,7 +16,7 @@ const createArticleCard = () => {
     return root
 }
 
-createArticleCard()
+// createArticleCard()
 
 const api = async () => {
     const url = `https://api.le-systeme-solaire.net/rest/bodies/sun`;
@@ -75,4 +75,9 @@ const table = async () => {
     return root
 }
 
-table()
+// table()
+
+export const teste = async () => {
+    table()
+    createArticleCard()
+}

@@ -17,7 +17,7 @@ const createArticleCard = () => {
     return root
 }
 
-createArticleCard()
+// createArticleCard()
 
 const createCard = (planet, indice) => {
     const li = document.createElement('li')
@@ -62,4 +62,10 @@ const loadCards = async () => {
     container.replaceChildren(...cards);
 };
 
-loadCards();
+// loadCards();
+
+export const loadAll = function (){
+    loadCards()
+    createArticleCard()
+
+}

@@ -18,6 +18,7 @@
     <script src="https://kit.fontawesome.com/56adc94ecd.js" crossorigin="anonymous"></script>
 
     <script src="../js/personal-information.js" type="module" defer></script>
+    <script src="./js/app.js" type="module" defer></script>
 
     <title>Solar System</title>
 </head>
@@ -40,15 +41,13 @@
         <article class="container-title-buttons">
             <h1 class="title">Solar System</h1>
             <div class="content-buttons">
-                <a href="./pages/sun.html" aria-label="Know more about the sun">
-                    <button>
-                        Sun
-                    </button>
+                <a href="/sun" onclick="route()" aria-label="Know more about the sun">
+                   sun
                 </a>
-                <a href="./pages/planets.html" aria-label="Learn more about the planets of the solar system">
-                    <button>
+                <a href="/planets" onclick="route()" aria-label="Learn more about the planets of the solar system">
+                
                         Planets
-                    </button>
+                  
                 </a>
             </div>
         </article>
