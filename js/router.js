@@ -1,8 +1,8 @@
 'use strict'
 
-import { teste } from './sun.js'
-import { loadAll } from './planets.js'
-import { loadAllPlanet } from './selected-planet.js'
+import { loadSun } from './sun.js'
+import { loadAllPlanets } from './planets.js'
+import { loadPlanet } from './selected-planet.js'
 import { createPersonalInformation } from './personal-information.js'
 
 const routes = {
@@ -15,28 +15,28 @@ const routes = {
 export const route = async () => {
     window.event.preventDefault()
     window.history.pushState({}, "", window.event.target.href)
-    console.log(window.location.pathname);
+    // console.log(window.location.pathname);
 
     const path = window.location.pathname
-    console.log(path);
+    // console.log(path);
     const route = routes[path]
 
     const response = await fetch(route)
     const html = await response.text()
 
-    console.log(route);
+    // console.log(route);
 
     document.getElementById('root').innerHTML = html
 
-    console.log(html);
-    createPersonalInformation()
+    // console.log(html);
 
+    createPersonalInformation()
     if (path == '/sun') {
-        teste()
-    } else if (path == '/planets'){
-        loadAll()
-    } else if (path == '/selected-planet'){
-        loadAllPlanet()
+        loadSun()
+    } else if (path == '/planets') {
+        loadAllPlanets()
+    } else if (path == '/selected-planet') {
+        loadPlanet()
     }
 
 }

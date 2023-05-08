@@ -46,15 +46,15 @@ Ao utilizar WebComponents, tive problemas, pois o Font Awesome por conta do shad
 
 ## **Critérios de avaliação**
 
-- [ ]  Documentou problemas, se encontrado, para futuras consultas?
+- [x]  Documentou problemas, se encontrado, para futuras consultas?
 - [x]  Foi criado o layout no figma?
 - [x]  A página foi construída seguindo o planejado no Figma?
 - [ ]  A página funciona em dispositivos diferentes?
 - [x]  Foi consumida a API escolhida?
 - [x]  Foi criado web componentes?
-- [ ]  Foi criado um padrão de roteamente para as paginas?
-- [ ]  As funções foram criadas seguindo à boa prática de responsabilidade única?
-- [ ]  Quando possível, foi criado funções puras?
+- [x]  Foi criado um padrão de roteamente para as paginas?
+- [x]  As funções foram criadas seguindo à boa prática de responsabilidade única?
+- [x]  Quando possível, foi criado funções puras?
 - [x]  O projeto está publicado?
 - [x]  Foi criado o arquivo README.md?
 

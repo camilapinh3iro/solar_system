@@ -22,8 +22,6 @@ const createArticleCard = () => {
     return container
 }
 
-// createArticleCard()
-
 const api = async () => {
     let id = localStorage.getItem('id')
     const url = `https://api.le-systeme-solaire.net/rest/bodies/${id}`;
@@ -82,9 +80,7 @@ const table = async () => {
     return root
 }
 
-// table()
-
-export const loadAllPlanet = () => {
+export const loadPlanet = () => {
     createArticleCard()
     table()
    

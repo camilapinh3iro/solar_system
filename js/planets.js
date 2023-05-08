@@ -18,8 +18,6 @@ const createArticleCard = () => {
     return root
 }
 
-// createArticleCard()
-
 const createCard = (planet, indice) => {
     const li = document.createElement('li')
 
@@ -34,7 +32,6 @@ const createCard = (planet, indice) => {
         localStorage.setItem("indice", indice);
         localStorage.setItem("id", planet.id)
         route()
-        
     };
 
     li.append(card)
@@ -66,10 +63,7 @@ const loadCards = async () => {
     container.replaceChildren(...cards);
 };
 
-// loadCards();
-
-export const loadAll = function (){
+export const loadAllPlanets = function (){
     loadCards()
     createArticleCard()
-
 }
