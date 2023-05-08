@@ -38,7 +38,6 @@ export const route = async () => {
     } else if (path == '/selected-planet') {
         loadPlanet()
     }
-
 }
 
 window.route = route;

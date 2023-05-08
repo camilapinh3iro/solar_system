@@ -47,13 +47,11 @@ class card extends HTMLElement {
             height: 550px;
             border-radius: 30px;
             transition: all 400ms ease-in-out;
-            // filter: grayscale(100%);
         }
 
         .card:hover{
             box-shadow: 4px 5px 10px #9e9d9d;
             transform: scale(1.03);
-            filter: grayscale(0%);
         }
 
         .image-planet{

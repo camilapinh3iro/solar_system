@@ -104,4 +104,4 @@ class card extends HTMLElement {
     }
 }
 
-customElements.define('evaluated-teste', card);
+customElements.define('evaluated-parameter', card);

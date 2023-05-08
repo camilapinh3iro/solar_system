@@ -116,82 +116,82 @@ class table extends HTMLElement {
     contentTitle.append(titleInformation, titleInformation2);
     contentAll.append(contentTitle);
 
-    const semimajorAxis = document.createElement('evaluated-teste')
+    const semimajorAxis = document.createElement('evaluated-parameter')
     semimajorAxis.setAttribute('parameter', characteristics[0].name)
     semimajorAxis.setAttribute('description', characteristics[0].description)
     semimajorAxis.setAttribute('result', this.semimajoraxis)
 
-    const perihelion = document.createElement('evaluated-teste')
+    const perihelion = document.createElement('evaluated-parameter')
     perihelion.setAttribute('result', this.perihelion)
     perihelion.setAttribute('parameter', characteristics[1].name)
     perihelion.setAttribute('description', characteristics[1].description)
 
-    const aphelion = document.createElement('evaluated-teste')
+    const aphelion = document.createElement('evaluated-parameter')
     aphelion.setAttribute('result', this.aphelion)
     aphelion.setAttribute('parameter', characteristics[2].name)
     aphelion.setAttribute('description', characteristics[2].description)
 
-    const eccentricity = document.createElement('evaluated-teste')
+    const eccentricity = document.createElement('evaluated-parameter')
     eccentricity.setAttribute('result', this.eccentricity)
     eccentricity.setAttribute('parameter', characteristics[3].name)
     eccentricity.setAttribute('description', characteristics[3].description)
 
-    const inclination = document.createElement('evaluated-teste')
+    const inclination = document.createElement('evaluated-parameter')
     inclination.setAttribute('result', this.inclination)
     inclination.setAttribute('parameter', characteristics[4].name)
     inclination.setAttribute('description', characteristics[4].description)
 
-    const density = document.createElement('evaluated-teste')
+    const density = document.createElement('evaluated-parameter')
     density.setAttribute('result', this.density)
     density.setAttribute('parameter', characteristics[5].name)
     density.setAttribute('description', characteristics[5].description)
 
-    const gravity = document.createElement('evaluated-teste')
+    const gravity = document.createElement('evaluated-parameter')
     gravity.setAttribute('result', this.gravity)
     gravity.setAttribute('parameter', characteristics[6].name)
     gravity.setAttribute('description', characteristics[6].description)
 
-    const meanRadius = document.createElement('evaluated-teste')
+    const meanRadius = document.createElement('evaluated-parameter')
     meanRadius.setAttribute('result', this.meanradius)
     meanRadius.setAttribute('parameter', characteristics[7].name)
     meanRadius.setAttribute('description', characteristics[7].description)
 
-    const equaRadius = document.createElement('evaluated-teste')
+    const equaRadius = document.createElement('evaluated-parameter')
     equaRadius.setAttribute('result', this.equaradius)
     equaRadius.setAttribute('parameter', characteristics[8].name)
     equaRadius.setAttribute('description', characteristics[8].description)
 
-    const polarRadius = document.createElement('evaluated-teste')
+    const polarRadius = document.createElement('evaluated-parameter')
     polarRadius.setAttribute('result', this.polarradius)
     polarRadius.setAttribute('parameter', characteristics[9].name)
     polarRadius.setAttribute('description', characteristics[9].description)
 
-    const flattening = document.createElement('evaluated-teste')
+    const flattening = document.createElement('evaluated-parameter')
     flattening.setAttribute('result', this.flattening)
     flattening.setAttribute('parameter', characteristics[10].name)
     flattening.setAttribute('description', characteristics[10].description)
 
-    const escape = document.createElement('evaluated-teste')
+    const escape = document.createElement('evaluated-parameter')
     escape.setAttribute('result', this.escape)
     escape.setAttribute('parameter', characteristics[11].name)
     escape.setAttribute('description', characteristics[11].description)
 
-    const sideralOrbit = document.createElement('evaluated-teste')
+    const sideralOrbit = document.createElement('evaluated-parameter')
     sideralOrbit.setAttribute('result', this.sideralorbit)
     sideralOrbit.setAttribute('parameter', characteristics[12].name)
     sideralOrbit.setAttribute('description', characteristics[12].description)
 
-    const sideralRotation = document.createElement('evaluated-teste')
+    const sideralRotation = document.createElement('evaluated-parameter')
     sideralRotation.setAttribute('result', this.sideralrotation)
     sideralRotation.setAttribute('parameter', characteristics[13].name)
     sideralRotation.setAttribute('description', characteristics[13].description)
 
-    const avgTemp = document.createElement('evaluated-teste')
+    const avgTemp = document.createElement('evaluated-parameter')
     avgTemp.setAttribute('result', this.avgtemp)
     avgTemp.setAttribute('parameter', characteristics[14].name)
     avgTemp.setAttribute('description', characteristics[14].description)
 
-    const axialTilt = document.createElement('evaluated-teste')
+    const axialTilt = document.createElement('evaluated-parameter')
     axialTilt.setAttribute('result', this.axialtilt)
     axialTilt.setAttribute('parameter', characteristics[15].name)
     axialTilt.setAttribute('description', characteristics[15].description)

@@ -17,7 +17,6 @@ const createArticleCard = () => {
     card.setAttribute('description', planets[indice].description)
     card.setAttribute('alt', `Illustration of the planet ${name}`)
  
-
     container.append(card)
     return container
 }
@@ -52,7 +51,7 @@ const api = async () => {
 const table = async () => {
     const data = await api()
 
-    const root = document.getElementById('contentTable')
+    const root = document.getElementById('content-table')
 
     const table = document.createElement('table-infos')
     table.setAttribute('semimajorAxis', data.semimajorAxis)
@@ -75,13 +74,10 @@ const table = async () => {
     table.setAttribute('axialTilt', data.axialTilt)
 
     root.append(table)
-
-    console.log(table);
     return root
 }
 
 export const loadPlanet = () => {
     createArticleCard()
-    table()
-   
+    table() 
 }

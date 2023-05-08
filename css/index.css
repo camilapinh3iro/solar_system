@@ -33,7 +33,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: transparent; */
     border: 2px solid var(--secondary-color);
     color: var(--secondary-color);
     width: 160px;
@@ -123,7 +122,6 @@ main {
     .container-title-buttons {
         background-image: url(../img/teste.jpg);
     }
-
 
     .soil-image{
         height: 400px;

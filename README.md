@@ -40,7 +40,7 @@ A hospedagem do site foi feita no Netlify. Segue o link:
 
 
 ## **Problemas Encontrados**
-Ao utilizar WebComponents, tive problemas, pois o Font Awesome por conta do shadow root (que encapsula as tags e os estilos), não conseguiu identificar as tags. Para resolver tal problema, segue a documentação:
+Obtive um problema ao utilizar Font Awesome no meu WebComponent. Por conta do shadow root (que encapsula as tags e os estilos), as tags não estavam sendo identificadas. Para resolver tal conflito, segue a documentação:
 
 - [Link do Notion](https://longing-fish-b4f.notion.site/DOCUMENTA-O-DE-PROBLEMAS-6304b013f8c64868b76940b4abbfb6c1)
 
