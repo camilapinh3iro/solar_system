@@ -136,6 +136,14 @@ class card extends HTMLElement {
             .title-astro {
                 font-size: 3rem;
             } 
+
+            .content-subject{
+                padding: 0px;
+            }
+
+            .description{
+                padding: 60px 40px;
+            }
         }
         `
 
