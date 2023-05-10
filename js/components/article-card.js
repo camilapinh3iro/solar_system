@@ -69,6 +69,74 @@ class card extends HTMLElement {
             width: 500px;
             font-size: 1.25rem;
         }
+
+        @media (max-width: 1450px){
+            .content-subject{
+                padding: 0 60px;
+                al
+            }
+
+            .image-subject {
+                height: 550px;
+                width: 650px;
+                align-self: center;
+            }
+        }
+
+        @media (max-width: 1270px){
+            .content-subject{
+                height: auto;
+            }
+
+            .image-subject {
+                height: 500px;
+                width: 580px;
+            }
+
+            .content-p{
+                width: 30vw;
+            }
+
+            .description{
+                padding-bottom: 60px;
+            }
+
+            .content-subject {
+                padding: 0 20px 0 60px;
+            }
+
+            .title-astro{
+                font-size: 5rem;
+            }
+        }
+
+        @media (max-width: 995px){
+            .image-subject {
+                height: 400px;
+                width: 480px;
+            }
+        }
+
+        @media (max-width: 850px){
+            .content-subject {
+                flex-direction: column;
+                padding: 0 60px;
+            }
+            .content-p{
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 560px){
+            .image-subject {
+                height: 30%;
+                width: 80%;
+            }
+
+            .title-astro {
+                font-size: 3rem;
+            } 
+        }
         `
 
         return css

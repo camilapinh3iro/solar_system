@@ -70,6 +70,34 @@ class card extends HTMLElement {
             place-content: center;
             padding-right: 60px;
         }
+        @media (max-width: 1055px) {
+            .content-information{
+                height: 180px;
+            }
+        }
+
+        @media (max-width: 770px) {
+            .content-information{
+                height: auto;
+                flex-direction: column; 
+                align-items: center;
+            }
+
+            .description-rated{
+                width: auto;
+                max-width: 80vw; 
+            }
+
+            .result {
+                padding-right: 0; 
+                padding-bottom: 15px;
+                padding-top: 30px;
+            }
+
+            .rated{
+                width: 80vw;
+            }
+        }
         `
 
         return css

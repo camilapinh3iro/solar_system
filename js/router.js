@@ -28,8 +28,6 @@ export const route = async () => {
 
     document.getElementById('root').innerHTML = html
 
-    // console.log(html);
-
     createPersonalInformation()
     if (path == '/sun') {
         loadSun()

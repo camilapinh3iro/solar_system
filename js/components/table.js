@@ -59,25 +59,25 @@ class table extends HTMLElement {
   styles() {
     const css = document.createElement("style");
     css.textContent = `
-        *{
+    *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
+    }
 
-        a{
+    a{
             text-decoration: none;
             color: inherit;
-        }
+    }
 
-        .content-planet-information {
+    .content-planet-information {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 85px 100px;
             color: var(--primary-color);
-        }
+    }
 
         .content-title-information {
             height: 70px;
@@ -93,6 +93,33 @@ class table extends HTMLElement {
             text-transform: uppercase;
             padding-right: 60px;
         }
+
+        @media (max-width: 770px) {
+          .display-none-mobile{
+            display: none;
+          }
+        }
+
+          @media (max-width: 550px){
+            .content-planet-information {
+              padding: 85px 0px;
+            }
+          }
+
+          @media (max-width: 300px){
+            .content-planet-information {
+              padding: 85px 40px;
+            }
+
+            .content-title-information {
+              justify-content: center;
+            }
+
+            .title-information{
+              padding-right: 1px;
+            }
+
+          }
         `;
 
     return css;
@@ -111,6 +138,7 @@ class table extends HTMLElement {
 
     const titleInformation2 = document.createElement("span");
     titleInformation2.classList.add("title-information");
+    titleInformation2.classList.add("display-none-mobile");
     titleInformation2.textContent = "Result";
 
     contentTitle.append(titleInformation, titleInformation2);

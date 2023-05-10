@@ -8,9 +8,22 @@ header{
     font-size: 1.6rem;
 }
 
+header a {
+    transition: all 400ms ease-in-out;
+}
+
 .logo{
     height: 42px;
     width: 42px;
+    transition: all 400ms ease-in-out;
 }
 
+.logo:hover {
+    transform: scale(1.11);
+}
 
+@media (max-width: 550px){
+    header {
+        padding: 15px 20px;
+    }
+  }

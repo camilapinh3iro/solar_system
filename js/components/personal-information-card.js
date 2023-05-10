@@ -123,6 +123,42 @@ class card extends HTMLElement {
         .contact-item:hover{
             transform: scale(1.1);
         }
+        @media (max-width: 830px){
+            .contact-item-text {
+                font-size: 1rem;
+            }
+
+            .contact-container i {
+                font-size: 1.3rem;
+            }
+
+            .social{
+                font-size: 1.5rem;
+                height: 45px;
+                width: 45px;
+            }
+
+            .follow{
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 620px){
+            .personal-information{
+                height: auto;
+                align-items: center;
+                gap: 30px;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 60px 40px;
+            }
+        }
+
+        @media (max-width: 380px){
+            .social-container {
+                flex-direction: column;
+            }
+        }
         `
 
         return css
