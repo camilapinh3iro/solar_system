@@ -101,6 +101,14 @@ class card extends HTMLElement {
                 font-size: 1.1rem;
             }
         }
+
+        @media (max-width: 420px){
+            .card{
+                padding: 28px 28px 50px 28px;
+                width: 310px;
+                height: 360px;
+            }
+        }
         `
 
         return css
