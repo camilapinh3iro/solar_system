@@ -6,3 +6,9 @@
     justify-content: center;
     gap: 50px;
 }
+
+@media (max-width: 1250px){
+    #content-card-planets{
+        padding: 85px 40px;
+    }
+}

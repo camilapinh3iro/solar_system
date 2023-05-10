@@ -16,7 +16,7 @@ class card extends HTMLElement {
 
     attributeChangedCallback(nameAttr, oldValue, newValue) {
         this[nameAttr] = newValue
-        
+
     }
 
     connectedCallback() {
@@ -78,6 +78,29 @@ class card extends HTMLElement {
             font-size: 1.2rem;
         
         }
+
+        @media (max-width: 1250px){
+            .card{
+                width: 380px;
+                height: 430px;
+            }
+        }
+
+        @media (max-width: 460px){
+            .card{
+                padding: 28px 28px 50px 28px;
+                width: 330px;
+                height: 380px;
+            }
+
+            .name-planet{
+                font-size: 2.2rem;
+            }
+
+            .planet-span{
+                font-size: 1.1rem;
+            }
+        }
         `
 
         return css
@@ -108,7 +131,7 @@ class card extends HTMLElement {
         contentInfos.append(planetSpan, namePlanet)
         card.append(image, contentInfos)
 
-        return card 
+        return card
     }
 }
 
