@@ -49,7 +49,7 @@ Obtive um problema ao utilizar Font Awesome no meu WebComponent. Por conta do sh
 - [x]  Documentou problemas, se encontrado, para futuras consultas?
 - [x]  Foi criado o layout no figma?
 - [x]  A página foi construída seguindo o planejado no Figma?
-- [ ]  A página funciona em dispositivos diferentes?
+- [x]  A página funciona em dispositivos diferentes?
 - [x]  Foi consumida a API escolhida?
 - [x]  Foi criado web componentes?
 - [x]  Foi criado um padrão de roteamente para as paginas?

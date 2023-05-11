@@ -102,7 +102,7 @@ class table extends HTMLElement {
 
           @media (max-width: 550px){
             .content-planet-information {
-              padding: 85px 0px;
+              padding: 60px 0px;
             }
           }
 
