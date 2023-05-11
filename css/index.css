@@ -102,7 +102,7 @@ main {
 @media (max-width: 1170px) {
     .card-astronaut {
         flex-direction: column;
-        height: 950px;
+        height: auto;
     }
 
     .card-astronaut img {
@@ -112,8 +112,8 @@ main {
     }
 
     .description-profession {
-        gap: 40px;
-        padding: 50px 68px;
+        gap: 20px;
+        padding: 30px 40px;
         width: 100%;
     }
 }
@@ -132,5 +132,62 @@ main {
     .content-profission-image {
         padding: 50px;
     }
-    
+
+    .title{
+        font-size: 5rem; 
+    }
+
+    .description-profession{
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 615px) {
+    .content-profission-image {
+        padding: 50px 20px;
+    }
+
+    .title{
+        font-size: 5rem; 
+        text-align: center;
+    }
+
+    .container-title-buttons {
+        background-image: url(../img/teste3.jpg);
+    }
+
+    .container-title-buttons{
+        padding: 0 60px;
+        justify-content: center;
+    }
+
+    .content-buttons{
+        flex-direction: column;
+    }
+
+    .soil-image{
+        height: 200px;
+    }
+
+    .content-profission-image{
+        gap: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .title{
+        font-size: 4.7rem;
+    }
+
+    .content-buttons a{
+        width: 145px;
+    }
+
+    .description-profession p {
+        font-size: 1.1rem;
+    }
+
+    .title-card {
+        font-size: 1.6rem;
+    }
 }
